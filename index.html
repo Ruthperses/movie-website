@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="hero-section">
+        <div class="overlay">
+            <div class="hero-text">
+                <h1>Book Your Tickets</h1>
+                <p>Concerts, Movies, Events — Fast & Easy</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking-form">
+            <h2>Reserve Your Spot</h2>
+            <form action="#">
+                <label for="event">Event Name</label>
+                <input type="text" id="event" name="event" placeholder="e.g. Marvel Movie" required />
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required />
+
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required />
+
+                <label for="tickets">Tickets</label>
+                <input type="number" id="tickets" name="tickets" min="1" max="10" required />
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TicketBooking.com - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
